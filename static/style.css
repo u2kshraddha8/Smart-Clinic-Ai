@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.registration-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+/*dashboard css*/
+    /* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.now-serving {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.now-serving h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#currentToken {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#currentPatient {
+    margin-top: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+.queue-card {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.queue-card h2 {
+    margin-bottom: 20px;
+}
+
+.patient-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.token {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.patient-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.patient-info span {
+    color: #777;
+    font-size: 14px;
+}
+#callNextBtn {
+    margin-top: 20px;
+    background: #222;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#callNextBtn:hover {
+    opacity: 0.9;
+}

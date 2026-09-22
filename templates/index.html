@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartClinic AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SmartClinic AI</h1>
+
+        <p class="subtitle">
+            Patient Registration
+        </p>
+
+        <div class="registration-card">
+
+    <h2 id="welcomeText">
+        Welcome to SmartClinic AI
+    </h2>
+
+    <p id="instructionText">
+        Please select your language
+    </p>
+
+    <div class="language-buttons">
+
+        <button class="language-btn" data-language="english">
+            English
+        </button>
+
+        <button class="language-btn" data-language="hindi">
+            हिंदी
+        </button>
+
+        <button class="language-btn" data-language="marathi">
+            मराठी
+        </button>
+
+    </div>
+
+    <button id="voiceBtn">
+        🎙️ Speak
+    </button>
+
+</div>
+      
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

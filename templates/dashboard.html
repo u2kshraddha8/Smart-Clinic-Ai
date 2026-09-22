@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartClinic AI - Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <h1>SmartClinic AI</h1>
+
+        <p class="subtitle">
+            Clinic Queue Dashboard
+        </p>
+
+
+        <!-- NOW SERVING -->
+
+        <div class="now-serving">
+
+            <h2>NOW SERVING</h2>
+
+            <div id="currentToken">
+                —
+            </div>
+
+            <p id="currentPatient">
+                No patient currently being served
+            </p>
+
+        </div>
+        <button id="callNextBtn">Call Next Patient</button>
+
+        <!-- WAITING QUEUE -->
+
+        <div class="queue-card">
+
+            <h2>Waiting Patients</h2>
+
+            <div id="queueList">
+
+                <p>
+                    Loading queue...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}">
+    </script>
+
+</body>
+
+</html>
